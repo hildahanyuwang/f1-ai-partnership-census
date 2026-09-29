@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Census of AI / Frontier-Model Partnerships across the 2026 Formula 1 Grid"
+authors:
+  - family-names: "Wang"
+    given-names: "Hanyu"
+    email: "hw3592@nyu.edu"
+    orcid: "https://orcid.org/0009-0000-2336-7057"
+version: "1.5"
+date-released: "2026-08-01"
+license: CC-BY-4.0
+# The Zenodo release is deliberately held until the companion paper is posted, so the
+# concept DOI does not exist yet. Uncomment and fill it after the first release, using the
+# CONCEPT doi (not the version doi) so citations always resolve to the latest version.
+# doi: "10.5281/zenodo.0000000"
+# Fill this in immediately after the repository is created.
+# repository-code: "https://github.com/hildahanyuwang/f1-ai-partnership-census"
+abstract: >-
+  A hand-built, primary-source census of publicly disclosed artificial-intelligence,
+  cloud, data, semiconductor, cybersecurity and enterprise-software partnerships held
+  by the eleven 2026 Formula 1 teams (plus the driver-personal and F1-central
+  landscape). Each of the 105 arrangements is coded for whether the FIA cost cap's
+  valuation machinery can price it (a two-tier scheme built on three economic
+  properties: bidirectional value flow, no clearing price, capability drift), for
+  integration depth, activity class, and disclosure of financial terms, with an
+  individually verified primary-source URL per record. Companion dataset to a study
+  of frontier AI and spending-based competitive regulation.
+keywords:
+  - Formula 1
+  - cost cap
+  - artificial intelligence
+  - frontier AI
+  - sponsorship
+  - competitive regulation
+  - sports economics
+  - valuation
+  - dataset census

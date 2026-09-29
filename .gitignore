@@ -1,0 +1,17 @@
+# Raw research transcripts: retained locally for provenance, NOT part of the
+# public release (see README header). Do not commit.
+raw_agent_transcripts/
+
+# Superseded version backups. ADDED 2026-09-28, before the first public push.
+# census_ai_f1_2026.v14.bak.csv holds the 87-row v1.4 snapshot taken before the
+# 2026-08-01 inclusion rule was fixed and applied retroactively. It is kept locally
+# because census/CENSUS_REFRESH_2026-08-01.md cites it as provenance, but it must NOT
+# be published: the README documents exactly one data file, and shipping a second,
+# undocumented CSV with a different row count (87 vs 105) and a different Tier-1 count
+# (70 vs 88) invites a reader to reproduce the wrong numbers. Reproducibility is one of
+# the criteria this dataset will be judged on.
+*.bak.csv
+
+# OS noise
+Thumbs.db
+.DS_Store

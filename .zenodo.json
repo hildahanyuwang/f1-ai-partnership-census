@@ -1,0 +1,24 @@
+{
+  "title": "Census of AI / Frontier-Model Partnerships across the 2026 Formula 1 Grid",
+  "upload_type": "dataset",
+  "version": "1.5",
+  "publication_date": "2026-08-01",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Wang, Hanyu",
+      "orcid": "0009-0000-2336-7057"
+    }
+  ],
+  "description": "A hand-built, primary-source census of publicly disclosed artificial-intelligence, cloud, data, semiconductor, cybersecurity and enterprise-software partnerships held by the eleven 2026 Formula 1 teams (plus the driver-personal and F1-central landscape). Each of the 105 arrangements is coded for whether the FIA cost cap's valuation machinery can price it (a two-tier scheme built on three economic properties: bidirectional value flow, no clearing price, capability drift), for integration depth, activity class, and disclosure of financial terms, with an individually verified primary-source URL per record. The README is the full codebook, including the explicit inclusion rule, the coding rulebook, correction history, completeness caveat, and per-record source-verification log. Companion dataset to a study of frontier AI and spending-based competitive regulation.",
+  "keywords": [
+    "Formula 1",
+    "cost cap",
+    "artificial intelligence",
+    "frontier AI",
+    "sponsorship",
+    "competitive regulation",
+    "sports economics",
+    "valuation"
+  ]
+}
