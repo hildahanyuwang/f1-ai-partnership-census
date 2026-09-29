@@ -8,7 +8,10 @@
 - **Documentation last revised:** 2026-09-29 (headings, the citation stub, the research-assistance statement in §0 and the provenance notes). **Documentation edits do not bump the data version**, because the CSV is untouched; every change to the data itself has a `CHANGELOG.md` entry.
 - **Completeness:** this is a **floor on publicly disclosed arrangements, not an exhaustive enumeration.** Teams publish 25–56 partners each. The inclusion boundary is now **fixed and written down (§3.0)** and has been applied retroactively; what remains open is the ordinary residue of any hand-built census — arrangements never announced, or announced in language no search reaches. See §8.7.
 - **Provenance:** hand-built from primary sources 2026-06-29; corrections 2026-07-02; R076 added 2026-07-10, adjudicated 2026-07-11; query-based refresh sweep 2026-07-30 adding `R077`–`R082`; official partner-page diff across all eleven teams 2026-07-30 adding `R083`–`R087`; inclusion rule fixed and applied 2026-08-01 adding `R088`–`R105`. The raw research transcripts cited in §8.5 are retained privately for provenance and are **not part of the public release**.
-- **License:** CC-BY-4.0 (see `LICENSE`)
+- **License:** **CC BY 4.0** — `LICENSE` carries the full official legal code. Copyright © 2026 Hanyu Wang.
+  *Scope of the licence:* it covers **the compilation, the coding and the documentation**. The primary-source
+  URLs recorded in the dataset point to third-party announcements and filings; **those pages remain the property
+  of their respective owners and are not covered by this licence.**
 - **DOI:** not yet minted. The Zenodo release is deliberately held until the companion paper is posted, so that the citable record of the dataset and of the paper appear together. Until then, cite the repository URL and the version number. Backfilled here and in `CITATION.cff` once assigned.
 
 **How to cite:**
