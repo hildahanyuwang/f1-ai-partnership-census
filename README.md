@@ -12,7 +12,7 @@
 - **DOI:** not yet minted. The Zenodo release is deliberately held until the companion paper is posted, so that the citable record of the dataset and of the paper appear together. Until then, cite the repository URL and the version number. Backfilled here and in `CITATION.cff` once assigned.
 
 **How to cite:**
-> Wang, H. (2026). *Census of AI / Frontier-Model Partnerships across the 2026 Formula 1 Grid* (v1.5) [Data set]. GitHub. *(Zenodo DOI to follow.)*
+> Wang, H. (2026). *Census of AI / Frontier-Model Partnerships across the 2026 Formula 1 Grid* (v1.5) [Data set]. GitHub. https://github.com/hildahanyuwang/f1-ai-partnership-census *(Zenodo DOI to follow.)*
 
 **Research assistance and AI use.** Stated here in one place rather than left to be discovered in footnotes.
 **The coding scheme is the author's**: the inclusion rule (§3.0), the definition of the frontier tier (§3.1) and

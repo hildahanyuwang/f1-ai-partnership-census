@@ -14,8 +14,7 @@ license: CC-BY-4.0
 # concept DOI does not exist yet. Uncomment and fill it after the first release, using the
 # CONCEPT doi (not the version doi) so citations always resolve to the latest version.
 # doi: "10.5281/zenodo.0000000"
-# Fill this in immediately after the repository is created.
-# repository-code: "https://github.com/hildahanyuwang/f1-ai-partnership-census"
+repository-code: "https://github.com/hildahanyuwang/f1-ai-partnership-census"
 abstract: >-
   A hand-built, primary-source census of publicly disclosed artificial-intelligence,
   cloud, data, semiconductor, cybersecurity and enterprise-software partnerships held
