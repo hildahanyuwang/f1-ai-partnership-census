@@ -5,7 +5,7 @@
 - **File:** `census_ai_f1_2026.csv` (UTF-8, pure ASCII, one row per arrangement)
 - **Records:** 105 arrangements (94 team-cap; 5 driver-personal; 6 F1-central); 0 unsourced
 - **Data version:** 1.5 (2026-08-01) — see `CHANGELOG.md`. **No row has changed since 2026-08-01.**
-- **Documentation last revised:** 2026-09-29 (headings, the citation stub, the research-assistance statement in §0 and the provenance notes). **Documentation edits do not bump the data version**, because the CSV is untouched; every change to the data itself has a `CHANGELOG.md` entry.
+- **Documentation last revised:** 2026-09-29 (headings, the citation stub, the research-assistance statement in §6 and the provenance notes). **Documentation edits do not bump the data version**, because the CSV is untouched; every change to the data itself has a `CHANGELOG.md` entry.
 - **Completeness:** this is a **floor on publicly disclosed arrangements, not an exhaustive enumeration.** Teams publish 25–56 partners each. The inclusion boundary is now **fixed and written down (§3.0)** and has been applied retroactively; what remains open is the ordinary residue of any hand-built census — arrangements never announced, or announced in language no search reaches. See §8.7.
 - **Provenance:** hand-built from primary sources 2026-06-29; corrections 2026-07-02; R076 added 2026-07-10, adjudicated 2026-07-11; query-based refresh sweep 2026-07-30 adding `R077`–`R082`; official partner-page diff across all eleven teams 2026-07-30 adding `R083`–`R087`; inclusion rule fixed and applied 2026-08-01 adding `R088`–`R105`. The raw research transcripts cited in §8.5 are retained privately for provenance and are **not part of the public release**.
 - **License:** **CC BY 4.0** — `LICENSE` carries the full official legal code. Copyright © 2026 Hanyu Wang.
@@ -16,17 +16,6 @@
 
 **How to cite:**
 > Wang, H. (2026). *Census of AI / Frontier-Model Partnerships across the 2026 Formula 1 Grid* (v1.5) [Data set]. GitHub. https://github.com/hildahanyuwang/f1-ai-partnership-census *(Zenodo DOI to follow.)*
-
-**Research assistance and AI use.** Stated here in one place rather than left to be discovered in footnotes.
-**The coding scheme is the author's**: the inclusion rule (§3.0), the definition of the frontier tier (§3.1) and
-the three properties (§3.2) were specified before any row was adjudicated, and are set out in full so that a
-reader can apply them independently and disagree. **AI assistance was used for two things, both under that
-scheme:** (i) *collection* — parallel search-and-retrieval agents gathered candidate arrangements and primary
-source URLs, each of which was then verified against the cited page (§8.4–§8.6), and (ii) *application* — three
-borderline rows (`R076`, `R077`, `R083`) were scored against the published rule by an AI assistant at the
-author's request, with the reasoning recorded in the row note and in §8.2, **and the author reviewed and ratified
-each call.** No tier in this dataset rests on an unreviewed machine judgement. Every classification, including
-those three, is contestable from the primary source cited in the row.
 
 **Companion paper.** The two-tier classification in this dataset — the `prop_bidirectional`,
 `prop_no_clearing_price`, `prop_capability_drift` and `tier` columns — operationalises a three-property test
@@ -163,6 +152,12 @@ These corrections are **authoritative** and are reflected in the CSV. Where the 
 
 ## 6. Provenance
 
+**Research assistance.** **Three of the 105 rows** (`R076`, `R077`, `R083`) were scored by an AI assistant
+against the rule published in §3.1–§3.2, which was fixed before any row was adjudicated. The reasoning for each
+is recorded in the row note and in §8.2, so the call can be checked rather than taken on trust; the author holds
+veto over all three. Retrieval assistance was also used in collection (§8.4–§8.6), with every captured URL
+verified against the cited page.
+
 Hand-built by six parallel primary-source research agents on **2026-06-29**, consolidating official team/provider announcements, corporate filings (Companies House) and specialist reporting; corrections adjudicated and applied **2026-07-02** from `analysis/grid_classification_table.md` *(project working file, not in this repository)*. Source project files: `census/CENSUS_AI_F1_2026-06-29.md` *(project working file, not in this repository)*, `analysis/grid_classification_table.md` *(project working file, not in this repository)*, `analysis/grid_partnerships.csv` *(project working file, not in this repository)*. The full per-record source-URL task-output files referenced in the census header were not available when this package was assembled; captured primary URLs come from the project's works-cited materials, and all others are marked `TBA` (see GAPS).
 
 ---
@@ -285,14 +280,14 @@ The 21 rows never covered by the archived transcripts (Williams, Racing Bulls, H
 - `LOW` confidence: `R014` Red Bull–AT&T (weak source), `R050` Williams–Brillio (secondary), `R045` Alpine–SEALSQ (exploratory), `R048` Alpine–data.ai (branding; **lapsed** as of 2026-08-01), `R062` Audi–JigSpace, `R067` Piastri–Dubber (currency uncertain), `R075` F1–PwC, and — downgraded 2026-08-01 on currency — `R043` Alpine–KX and `R058` Haas–CSG.
 - `MED` confidence on **what is supplied**, as distinct from whether the arrangement exists: `R094` McLaren–Arrow Electronics (F1-side supply not itemised; Arrow is title partner of the IndyCar team), `R098` Ferrari–DXC Technology (much of the announced scope concerns Ferrari road cars, not the race team), `R096` Mercedes–Solera and `R101` Racing Bulls–Siemens (sourced to partner pages, announcements not located). Each caveat is carried in the row's own `notes`.
 - **Borderline classification calls to double-check:** `R006` Alpine–Indra (`T2` hedged "probable"), `R054` Racing Bulls–Neural Concept (`T1`, scores 2/3), `R005` Cadillac–TWG (`T2` but related-party, excluded from sponsored count).
-- **`R083` McLaren–Groq and `R077` McLaren–Intel — ADJUDICATED 2026-08-01** (scored against the published rule in §3.1–§3.2 by an AI assistant at the author's request; reviewed and ratified by the author — see §0, Research assistance and AI use). Both `T1` **ratified**, with explicit vectors scored from the primary releases per the `R076` precedent:
+- **`R083` McLaren–Groq and `R077` McLaren–Intel — ADJUDICATED 2026-08-01** (scored against the published rule in §3.1–§3.2 by an AI assistant at the author's request; author retains veto; the reasoning is recorded so the call can be checked — see §6, Research assistance). Both `T1` **ratified**, with explicit vectors scored from the primary releases per the `R076` precedent:
   - `R083` **Groq** — `1,0,0` → **1/3**. A dedicated AI-inference supplier (custom LPU) feeding "real-time insight" into race-weekend decision-making, sponsoring the team, logo on the rear wing, terms undisclosed: **the census's hardest on-ledger call.** A = 1 on *branding alone* (the release names no data return, no expert feedback, no co-development) — scored 1 only for consistency with `R076`; see the Property A note in §3.2. B = 0: GroqCloud publishes per-token inference pricing. C = 0: what is transferred is inference capacity at a published rate.
   - `R077` **Intel** — `1,0,0` → **1/3**. A = 1 on firmer ground than Groq: the release states the companies "will co-engineer solutions." B = 0: Xeon and Core Ultra carry published list prices in a deep market. C = 0: delivered silicon performs identically across a reporting period; a product-line refresh is a new purchase, not drift in the capability supplied.
   - **Why the adjudication is worth having.** Both rows fail the all-three rule **on the most generous available reading**: score Property C as 1 for either and the total is 2/3, still short. The `T1` call therefore rests on **Property B — the single most externally verifiable of the three, since it is settled by a published price list rather than by judgment.** That is the reply if a reviewer attacks the Tier-1/Tier-2 line here, which is where they will attack it. The deeper point stands unchanged: the rule keys on *what is transferred*. Priced inference capacity and priced silicon are severable and quotable; a frontier thinking-partner relationship is not.
   - **Second-order value:** both sit at McLaren, which *also* holds a Tier-2 arrangement. Identical sponsor structure, identical branding, undisclosed terms in every case — and the cap can price two of the three. The distinction the paper draws does visible work inside a single team's portfolio.
   - `R078` McLaren–Okta — **resolved 2026-07-30 (author decision): retained.** Identity and access management; **the announcement names no AI component**. It is in the census on the same basis as the eight comparable enterprise-security rows (`R012`, `R018`, `R021`, `R038`, `R044`, `R053`, `R061`, `R079`): the census's unit is the *technology partnership* held by a team, sorted by whether the cap can price it, not "arrangements whose press release says AI." All nine are on-ledger either way, so no headline depends on the choice; the author elected to keep them rather than narrow the inclusion rule mid-dataset.
   - `R082` Racing Bulls–Confluent is coded `MED-HIGH` rather than `HIGH` only on 2026 currency (announced in the 2025 season, still listed on the team partner page).
-- **Resolved:** `R076` Mercedes–G42 — flagged BORDERLINE on entry (2026-07-10); **adjudicated 2026-07-11** (scored against the published rule in §3.1–§3.2 by an AI assistant at the author's request; reviewed and ratified by the author — see §0, Research assistance and AI use): `T1` ratified. Properties scored per the `R054` precedent (1,0,1 → 2/3 — fails the all-three rule independently of the frontier gate); 2023–2026 record re-checked with no expansion into a general-purpose frontier-model deployment; the rule keys on the technology transferred (Presight analytics), not the counterparty's portfolio (G42 group's Jais/Core42 LLM assets are not part of this arrangement). See Correction #7 and the row note.
+- **Resolved:** `R076` Mercedes–G42 — flagged BORDERLINE on entry (2026-07-10); **adjudicated 2026-07-11** (scored against the published rule in §3.1–§3.2 by an AI assistant at the author's request; author retains veto; the reasoning is recorded so the call can be checked — see §6, Research assistance): `T1` ratified. Properties scored per the `R054` precedent (1,0,1 → 2/3 — fails the all-three rule independently of the frontier gate); 2023–2026 record re-checked with no expansion into a general-purpose frontier-model deployment; the rule keys on the technology transferred (Presight analytics), not the counterparty's portfolio (G42 group's Jais/Core42 LLM assets are not part of this arrangement). See Correction #7 and the row note.
 
 ### 8.3 Other items to confirm
 - `constructor_entity` for non-UK / new teams (Ferrari, Racing Bulls, Haas, Audi, Cadillac) uses descriptive names, not verified legal-registration strings — verify exact entity names if precise entity attribution is needed.
